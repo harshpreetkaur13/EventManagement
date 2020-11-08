@@ -14,13 +14,15 @@
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="Beventful.png" alt="Beventfull.com">
+            <img src="logo.jpg" alt="Beventfull.com">
         </div>
         <ul>
             <li class="item"><a href="#home">Home</a></li>
             <li class="item"><a href="#services-container">Services</a></li>
-            <li class="item"><a href="#client-section">Our Clients</a></li>
-            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="#client-section">About us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <li class="item"><a href="login.html" target="_blank">Login</a></li>
         </ul>
     </nav>
 
@@ -28,8 +30,10 @@
         <h1 class="h-primary">Welcome to Beventfull</h1>
         <p>Memorable events don’t just happen. They happen to be our business. </p>
         
-        <button class="btn">Click to Explore</button>
+        <button class="btn"><a href="explore.html"> Click to Explore </a></button>
     </section>
+
+    <br><hr>
 
     <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
@@ -37,10 +41,10 @@
             <div class="box">
                 <img src="venue.jpg" alt="">
                 <h2 class="h-secondary center">Venue Sourcing</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                <p class="center">Are you occasionally tasked with planning a one-off board meeting or holiday 
+                    party and need an organized place to start? Beventfull offers a complimentary version of our sourcing 
+                    technology that is the perfect resource for planners who occasionally need to search and secure offsite 
+                    venue space without the headaches in doing so. Beventfull's professionals customize the entire sourcing process from start to finish.</p>
             </div>
             <div class="box">
                 <img src="decor.jpg" alt="">
@@ -62,8 +66,12 @@
             </div>
         </div>
     </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
+
+    <br><hr>
+
+    <div id="client-section">
+        <h1 class="h-primary center">About Us</h1>
+        <h1>Our clients</h1>
         <div id="clients">
             <div class="client-item">
                 <img src="wizkraft.png" alt="Our Client">
@@ -79,32 +87,63 @@
                 <img src="black eagle.png" alt="Our Client">
             </div>
         </div>
+        <h1>Meet our team</h1><br>
+        <div class="row">
+            <div class="column">
+              <img src="https://organics.axiomthemes.com/wp-content/uploads/2015/05/team-1_small-240x240.jpg" alt="Snow" style="width:80%">
+            </div>
+            <div class="column">
+              <img src="https://organics.axiomthemes.com/wp-content/uploads/2015/05/team-2_small-240x240.jpg" alt="Forest" style="width:80%">
+            </div>
+            <div class="column">
+              <img src="https://organics.axiomthemes.com/wp-content/uploads/2015/05/team-3_small-240x240.jpg" alt="Mountains" style="width:80%">
+            </div>
+            <div class="column">
+                <img src="https://organics.axiomthemes.com/wp-content/uploads/2015/05/team-4_small-240x240.jpg" alt="Mountains" style="width:80%">
+              </div>
+          </div>
+          <h2>&emsp;&emsp;Marvin Fletcher&emsp;&emsp;&emsp;&emsp;&emsp; Valerie Anderson&emsp; &emsp;&emsp;&emsp;&emsp; Frederick Dean &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Katherine Ruiz</h2>
+          <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Founder&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Founder &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Nutritionist &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Food Blogger</p>
+          <br>
+            
+    </div>
 
-    </section>
+</div>
 
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us </h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="name" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number: </label>
-                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-        </div>
-    </section>
+<br><hr>
+
+
+<div id="contact"></div>
+    <div class="middle">
+        <h1 class="h-primary center">Contact Form</h1>
+        <h3>GET IN TOUCH WITH US</h3><br>
+        <p>Beventful makes exclusive events, priceless memories. We welcome you at our facility at any time!</p><br><br>
+        
+        <div class="container">
+        <form onsubmit="return validateForm()">
+    
+            <input type="text" id="name" name="name" placeholder="Name*" required>
+        
+            <input type="email" id="email" name="email" placeholder="Email*" required>
+        
+            <select id="country" name="country">
+              <option value="India">India</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <textarea id="message" name="message" placeholder="Message" style="height:200px" required></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+          </div>
+
+          <br><br>
+
+    </div>
+
+    <br><hr>
 
     <footer>
         <div class="center">
